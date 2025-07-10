@@ -1,1 +1,5 @@
+### OK M51
 GET https://simbad.u-strasbg.fr/simbad/sim-tap/sync?request=doQuery&lang=adql&format=json&query=SELECT main_id, ra, dec FROM basic WHERE main_id='M51'
+
+### KO
+GET https://simbad.u-strasbg.fr/simbad/sim-tap/sync?request=doQuery&lang=adql&format=json&query=SELECT main_id, ra, dec FROM basic WHERE main_id='qsdf'

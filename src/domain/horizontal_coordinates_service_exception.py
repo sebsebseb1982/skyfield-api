@@ -1,0 +1,2 @@
+class HorizontalCoordinatesServiceException(Exception):
+    pass
