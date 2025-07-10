@@ -1,20 +1,20 @@
 ### Mars
-GET http://localhost:8000/horizontal-coordinates/planets-and-moons/MARS_BARYCENTER?latitude=44.561838&longitude=2.854946
+GET http://localhost:8000/horizontal-coordinates/planets-and-moons/MARS_BARYCENTER?latitude=44.561838&longitude=2.854946&elevation=19.3
 
 ### Mars
-GET http://localhost:8000/horizontal-coordinates/planets-and-moons/MARS?latitude=44.561838&longitude=2.854946
+GET http://localhost:8000/horizontal-coordinates/planets-and-moons/MARS?latitude=44.561838&longitude=2.854946&elevation=19.3
 
 ### Saturne
-GET http://localhost:8000/horizontal-coordinates/planets-and-moons/saturn%20barycenter?latitude=44.561838&longitude=2.854946
+GET http://localhost:8000/horizontal-coordinates/planets-and-moons/saturn%20barycenter?latitude=44.561838&longitude=2.854946&elevation=19.3
 
 ### Soleil
-GET http://localhost:8000/horizontal-coordinates/planets-and-moons/sun?latitude=44.561838&longitude=2.854946
+GET http://localhost:8000/horizontal-coordinates/planets-and-moons/sun?latitude=44.561838&longitude=2.854946&elevation=19.3
 
 ### Lune
-GET http://localhost:8000/horizontal-coordinates/planets-and-moons/moon?latitude=44.561838&longitude=2.854946
+GET http://localhost:8000/horizontal-coordinates/planets-and-moons/moon?latitude=44.561838&longitude=2.854946&elevation=19.3
 
 ### M 51
-GET http://localhost:8000/horizontal-coordinates/deep-space-objects/m 51?latitude=44.561838&longitude=2.854946
+GET http://localhost:8000/horizontal-coordinates/deep-space-objects/m 51?latitude=44.561838&longitude=2.854946&elevation=19.3
 
 ### Etoile polaire
-GET http://localhost:8000/horizontal-coordinates/deep-space-objects/polaris?latitude=44.561838&longitude=2.854946
+GET http://localhost:8000/horizontal-coordinates/deep-space-objects/polaris?latitude=44.561838&longitude=2.854946&elevation=19.3

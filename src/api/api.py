@@ -8,8 +8,8 @@ simbadRepository:SimbadRepository = SimbadRepository()
 horizontalCoordinatesService:HorizontalCoordinatesService = HorizontalCoordinatesService(simbadRepository)
 
 @app.get("/horizontal-coordinates/{type}/{name}")
-def get_position(type: str, name: str, latitude: float, longitude: float) -> HorizontalCoordinates:
-    return horizontalCoordinatesService.get_horizontal_coordinates(type, name, latitude, longitude)
+def get_position(type: str, name: str, latitude: float, longitude: float, elevation: float) -> HorizontalCoordinates:
+    return horizontalCoordinatesService.get_horizontal_coordinates(type, name, latitude, longitude, elevation)
 
 @app.get("/catalog")
 def get_objects():

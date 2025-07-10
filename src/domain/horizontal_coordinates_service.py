@@ -9,12 +9,12 @@ class HorizontalCoordinatesService:
         self.simbadRepository=simbadRepository
         pass
     
-    def get_horizontal_coordinates(self, type: str, name: str, latitude: float, longitude: float) -> HorizontalCoordinates:
+    def get_horizontal_coordinates(self, type: str, name: str, latitude: float, longitude: float, elevation: float) -> HorizontalCoordinates:
 
         planets = load('de421.bsp')
         earth = planets['earth']
         # FIXME ajouter l'élévation
-        observer = earth + Topos(latitude_degrees=latitude, longitude_degrees=longitude)
+        observer = earth + Topos(latitude_degrees=latitude, longitude_degrees=longitude, elevation_m=elevation)
         ts = load.timescale()
         t = ts.now()
 
