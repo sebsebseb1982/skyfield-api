@@ -1,14 +1,14 @@
 ### Mars
-GET http://localhost:8000/position/planets-and-moons/MARS_BARYCENTER?latitude=44.816669&longitude=-0.58
+GET http://localhost:8000/position/planets-and-moons/MARS_BARYCENTER?latitude=44.561838&longitude=2.854946
 
 ### Mars
-GET http://localhost:8000/position/planets-and-moons/MARS?latitude=44.816669&longitude=-0.58
+GET http://localhost:8000/position/planets-and-moons/MARS?latitude=44.561838&longitude=2.854946
 
 ### Saturne
-GET http://localhost:8000/position/planets-and-moons/saturn%20barycenter?latitude=44.816669&longitude=-0.58
+GET http://localhost:8000/position/planets-and-moons/saturn%20barycenter?latitude=44.561838&longitude=2.854946
 
 ### Soleil
-GET http://localhost:8000/position/planets-and-moons/sun?latitude=44.816669&longitude=-0.58
+GET http://localhost:8000/position/planets-and-moons/sun?latitude=44.561838&longitude=2.854946
 
 ### Lune
-GET http://localhost:8000/position/planets-and-moons/moon?latitude=44.816669&longitude=-0.58
+GET http://localhost:8000/position/planets-and-moons/moon?latitude=44.561838&longitude=2.854946
