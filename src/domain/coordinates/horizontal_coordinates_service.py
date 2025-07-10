@@ -1,8 +1,8 @@
 from skyfield.api import load, Topos, Star
 from src.clients.simbad.simbad_repository import SimbadRepository
-from src.domain.equatorial_coordinates import EquatorialCoordinates
-from src.domain.horizontal_coordinates_service_exception import HorizontalCoordinatesServiceException
-from src.domain.horizontal_coordinates import HorizontalCoordinates
+from src.domain.coordinates.equatorial_coordinates import EquatorialCoordinates
+from src.domain.coordinates.horizontal_coordinates_service_exception import HorizontalCoordinatesServiceException
+from src.domain.coordinates.horizontal_coordinates import HorizontalCoordinates
 
 class HorizontalCoordinatesService:
     def __init__(self, simbadRepository:SimbadRepository):

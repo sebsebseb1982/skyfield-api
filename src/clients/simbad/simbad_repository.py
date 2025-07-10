@@ -1,5 +1,5 @@
 import requests
-from src.domain.equatorial_coordinates import EquatorialCoordinates
+from src.domain.coordinates.equatorial_coordinates import EquatorialCoordinates
 
 
 class SimbadRepository:
