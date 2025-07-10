@@ -16,7 +16,6 @@ class SimbadRepository:
         }
 
         response = requests.get(url, params=params)
-        print(response.json())
 
         return EquatorialCoordinates(
             response.json()['data'][0][1],
