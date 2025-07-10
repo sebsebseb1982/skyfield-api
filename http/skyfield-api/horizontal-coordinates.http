@@ -1,20 +1,24 @@
-### Mars
-GET http://localhost:8000/horizontal-coordinates/planets-and-moons/MARS_BARYCENTER?latitude=44.561838&longitude=2.854946&elevation=19.3
+@latitude = 44.561838
+@longitude = 2.854946
+@elevation = 25
 
 ### Mars
-GET http://localhost:8000/horizontal-coordinates/planets-and-moons/MARS?latitude=44.561838&longitude=2.854946&elevation=19.3
+GET http://localhost:8000/horizontal-coordinates/planets-and-moons/MARS_BARYCENTER?latitude={{latitude}}&longitude={{longitude}}&elevation={{elevation}}
+
+### Mars
+GET http://localhost:8000/horizontal-coordinates/planets-and-moons/MARS?latitude={{latitude}}&longitude={{longitude}}&elevation={{elevation}}
 
 ### Saturne
-GET http://localhost:8000/horizontal-coordinates/planets-and-moons/saturn%20barycenter?latitude=44.561838&longitude=2.854946&elevation=19.3
+GET http://localhost:8000/horizontal-coordinates/planets-and-moons/saturn%20barycenter?latitude={{latitude}}&longitude={{longitude}}&elevation={{elevation}}
 
 ### Soleil
-GET http://localhost:8000/horizontal-coordinates/planets-and-moons/sun?latitude=44.561838&longitude=2.854946&elevation=19.3
+GET http://localhost:8000/horizontal-coordinates/planets-and-moons/sun?latitude={{latitude}}&longitude={{longitude}}&elevation={{elevation}}
 
 ### Lune
-GET http://localhost:8000/horizontal-coordinates/planets-and-moons/moon?latitude=44.561838&longitude=2.854946&elevation=19.3
+GET http://localhost:8000/horizontal-coordinates/planets-and-moons/moon?latitude={{latitude}}&longitude={{longitude}}&elevation={{elevation}}
 
 ### M 51
-GET http://localhost:8000/horizontal-coordinates/deep-space-objects/m 51?latitude=44.561838&longitude=2.854946&elevation=19.3
+GET http://localhost:8000/horizontal-coordinates/deep-space-objects/m 51?latitude={{latitude}}&longitude={{longitude}}&elevation={{elevation}}
 
 ### Etoile polaire
-GET http://localhost:8000/horizontal-coordinates/deep-space-objects/polaris?latitude=44.561838&longitude=2.854946&elevation=19.3
+GET http://localhost:8000/horizontal-coordinates/deep-space-objects/polaris?latitude={{latitude}}&longitude={{longitude}}&elevation={{elevation}}
