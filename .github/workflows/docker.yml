@@ -3,6 +3,8 @@ name: Build Docker Image
 on:
   push:
     branches: [ master ]
+    tags:
+      - 'v*.*.*'  # ex: v1.2.3
 
 jobs:
   docker-build:
@@ -21,9 +23,21 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+      - name: Extract Git tag
+        id: extract_tag
+        run: |
+          if [[ "${GITHUB_REF}" == refs/tags/* ]]; then
+            TAG="${GITHUB_REF#refs/tags/}"
+          else
+            TAG="latest"
+          fi
+          echo "image_tag=$TAG" >> $GITHUB_OUTPUT
+
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/skyfield-api:latest
+          tags: |
+            ${{ secrets.DOCKERHUB_USERNAME }}/skyfield-api:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/skyfield-api:${{ steps.extract_tag.outputs.image_tag }}
