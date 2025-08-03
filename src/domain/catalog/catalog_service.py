@@ -17,16 +17,36 @@ class CatalogService:
                         'moon'
                     ),
                     CelestialObject(
+                        'Sun',
+                        'sun'
+                    ),
+                    CelestialObject(
                         'Jupiter',
-                        'jupiter'
+                        'jupiter barycenter'
                     ),
                     CelestialObject(
                         'Saturn',
-                        'saturn'
+                        'saturn barycenter'
                     ),
                     CelestialObject(
                         'Mars',
                         'mars'
+                    ),
+                    CelestialObject(
+                        'Mercury',
+                        'mercury'
+                    ),
+                    CelestialObject(
+                        'Venus',
+                        'venus'
+                    ),
+                    CelestialObject(
+                        'Uranus',
+                        'uranus barycenter'
+                    ),
+                    CelestialObject(
+                        'Pluto',
+                        'pluto'
                     )
                 ]
             ),
