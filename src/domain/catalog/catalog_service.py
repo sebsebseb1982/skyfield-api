@@ -14,7 +14,19 @@ class CatalogService:
                 [
                     CelestialObject(
                         'Moon',
-                        'MOON'
+                        'moon'
+                    ),
+                    CelestialObject(
+                        'Jupiter',
+                        'jupiter'
+                    ),
+                    CelestialObject(
+                        'Saturn',
+                        'saturn'
+                    ),
+                    CelestialObject(
+                        'Mars',
+                        'mars'
                     )
                 ]
             ),
@@ -24,7 +36,11 @@ class CatalogService:
                 [
                     CelestialObject(
                         'Whirpool Galaxy',
-                        'M 51'
+                        'm 51'
+                    ),
+                    CelestialObject(
+                        'Polaris',
+                        '* alf UMi'
                     )
                 ]
             )
