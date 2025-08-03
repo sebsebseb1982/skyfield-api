@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Response
 from src.clients.simbad.simbad_repository import SimbadRepository
 from src.domain.catalog.catalog_service import CatalogService
 from src.domain.coordinates.horizontal_coordinates import HorizontalCoordinates
@@ -16,3 +16,7 @@ def get_position(type: str, name: str, latitude: float, longitude: float, elevat
 @app.get("/catalog")
 def get_catalog():
     return catalog_service.get_all()
+
+@app.get("/health")
+def health():
+    return Response(status_code=200)
