@@ -63,5 +63,15 @@ class CatalogService:
                         '* alf UMi'
                     )
                 ]
+            ),
+            CelestialObjectsCollection(
+                'Specials',
+                'specials',
+                [
+                    CelestialObject(
+                        'International Space Station',
+                        'iss'
+                    )
+                ]
             )
         ]
