@@ -3,10 +3,15 @@ from src.clients.simbad.simbad_repository import SimbadRepository
 from src.domain.catalog.catalog_service import CatalogService
 from src.domain.coordinates.horizontal_coordinates import HorizontalCoordinates
 from src.domain.coordinates.horizontal_coordinates_service import HorizontalCoordinatesService
+from src.clients.wheretheiss.wheretheiss_repository import WhereTheISSRepository
 
 app = FastAPI()
 simbadRepository:SimbadRepository = SimbadRepository()
-horizontalCoordinatesService:HorizontalCoordinatesService = HorizontalCoordinatesService(simbadRepository)
+whereTheISSRepository:WhereTheISSRepository = WhereTheISSRepository()
+horizontalCoordinatesService:HorizontalCoordinatesService = HorizontalCoordinatesService(
+    simbadRepository,
+    whereTheISSRepository
+)
 catalog_service:CatalogService = CatalogService()
 
 @app.get("/horizontal-coordinates/{type}/{name}")

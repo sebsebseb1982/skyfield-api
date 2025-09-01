@@ -1,4 +1,4 @@
-@host = http://192.168.1.169:22666
+@host = http://localhost:8000
 @latitude = 44.561838
 @longitude = 2.854946
 @elevation = 25
@@ -26,3 +26,6 @@ GET {{host}}/horizontal-coordinates/deep-space-objects/m 51?latitude={{latitude}
 
 ### Etoile polaire
 GET {{host}}/horizontal-coordinates/deep-space-objects/Alpha Ursae Minoris?latitude={{latitude}}&longitude={{longitude}}&elevation={{elevation}}
+
+### International Space Station (ISS)
+GET {{host}}/horizontal-coordinates/specials/iss?latitude={{latitude}}&longitude={{longitude}}&elevation={{elevation}}
