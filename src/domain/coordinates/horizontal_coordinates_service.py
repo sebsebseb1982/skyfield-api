@@ -20,7 +20,7 @@ class HorizontalCoordinatesService:
         ts = load.timescale()
         t = ts.now()
 
-        if(type=='planets-and-moons'):
+        if(type=='solar-system'):
             target = planets[name]
 
             astrometric = observer.at(t).observe(target)

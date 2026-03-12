@@ -1,25 +1,25 @@
-@host = http://localhost:8000
+@host = http://maison.sebastienblondy.com:44558
 @latitude = 44.561838
 @longitude = 2.854946
 @elevation = 25
 
 ### Mars
-GET {{host}}/horizontal-coordinates/planets-and-moons/MARS_BARYCENTER?latitude={{latitude}}&longitude={{longitude}}&elevation={{elevation}}
+GET {{host}}/horizontal-coordinates/solar-system/MARS_BARYCENTER?latitude={{latitude}}&longitude={{longitude}}&elevation={{elevation}}
 
 ### Mars
-GET {{host}}/horizontal-coordinates/planets-and-moons/mars?latitude={{latitude}}&longitude={{longitude}}&elevation={{elevation}}
+GET {{host}}/horizontal-coordinates/solar-system/mars?latitude={{latitude}}&longitude={{longitude}}&elevation={{elevation}}
 
 ### Saturne
-GET {{host}}/horizontal-coordinates/planets-and-moons/saturn%20barycenter?latitude={{latitude}}&longitude={{longitude}}&elevation={{elevation}}
+GET {{host}}/horizontal-coordinates/solar-system/saturn%20barycenter?latitude={{latitude}}&longitude={{longitude}}&elevation={{elevation}}
 
 ### Jupiter
-GET {{host}}/horizontal-coordinates/planets-and-moons/jupiter%20barycenter?latitude={{latitude}}&longitude={{longitude}}&elevation={{elevation}}
+GET {{host}}/horizontal-coordinates/solar-system/jupiter%20barycenter?latitude={{latitude}}&longitude={{longitude}}&elevation={{elevation}}
 
 ### Soleil
-GET {{host}}/horizontal-coordinates/planets-and-moons/sun?latitude={{latitude}}&longitude={{longitude}}&elevation={{elevation}}
+GET {{host}}/horizontal-coordinates/solar-system/sun?latitude={{latitude}}&longitude={{longitude}}&elevation={{elevation}}
 
 ### Lune
-GET {{host}}/horizontal-coordinates/planets-and-moons/moon?latitude={{latitude}}&longitude={{longitude}}&elevation={{elevation}}
+GET {{host}}/horizontal-coordinates/solar-system/moon?latitude={{latitude}}&longitude={{longitude}}&elevation={{elevation}}
 
 ### M 51
 GET {{host}}/horizontal-coordinates/deep-space-objects/m 51?latitude={{latitude}}&longitude={{longitude}}&elevation={{elevation}}

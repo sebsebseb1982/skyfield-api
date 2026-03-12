@@ -9,8 +9,8 @@ class CatalogService:
         pass
         return [
             CelestialObjectsCollection(
-                'Planets & moons',
-                'planets-and-moons',
+                'Solar system',
+                'solar-system',
                 [
                     CelestialObject(
                         'Moon',
